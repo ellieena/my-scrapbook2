@@ -1,0 +1,421 @@
+/* Basic Body Styles */
+body {
+  background-color: #fdf6ec; /* cream */
+  font-family: 'Verdana', sans-serif;
+  color: #4e3629; /* dark brown */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Wrapper for Main Content */
+.wrapper {
+  max-width: 90%;
+  margin: 5vw auto;
+  padding: 4vw;
+  background-color: #fffef9;
+  border: 3px dashed #7c6c53;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(60, 50, 30, 0.1);
+  position: relative;
+}
+
+/* Headings (Main and Sub) */
+.main-heading, .sub-heading {
+  font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 5vw;
+  color: #3f5e3f; /* deep green */
+  margin-bottom: 2vw;
+  border-bottom: 3px solid #9bbf95;
+  padding-bottom: 1vw;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 3vw;
+  color: #7c6c53; /* light brown */
+  margin-bottom: 3vw;
+}
+
+/* Memory Block */
+.memory-block {
+  background: linear-gradient(to bottom right, #f4efe7, #e6e6d6); /* gradient */
+  padding: 4vw;
+  border-left: 6px solid #9bbf95;
+  border-radius: 12px;
+  margin: 4vw 0;
+}
+
+/* Highlighted Text */
+.highlight {
+  background-color: #d7e8c5;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.highlight-alt {
+  color: #639a67;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Image Sections */
+.image-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  margin: 4vw 0;
+}
+
+.image-pixel, .image-penguin {
+  width: 30vw;
+  max-width: 300px;
+  border: 4px solid #7c6c53;
+  border-radius: 10px;
+  filter: contrast(1.05) saturate(1.1);
+  margin: 2vw;
+  transition: transform 0.3s ease;
+}
+
+.image-pixel:hover, .image-penguin:hover {
+  transform: scale(1.05);
+}
+
+/* List Styles */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #3f5e3f;
+  margin-top: 10px;
+}
+
+/* Link Styling */
+.link-para {
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  color: #4d774e;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #a0b9a2;
+}
+
+a:hover {
+  color: #5e8a5a;
+  border-bottom-style: dotted;
+}
+
+/* Scribble PNG (handwritten note) */
+.scribble-note img {
+  width: 40vw;
+  max-width: 300px;
+  display: block;
+  margin: 5vw auto;
+}
+
+/* Repeated Word Section (chaos) */
+.repeat-chaos {
+  font-size: 3vw;
+  color: #9b7653;
+  text-align: center;
+  margin: 5vw 0;
+  font-weight: bold;
+}
+
+/* Emoji Link (non-intuitive links) */
+.emoji-link {
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 5vw;
+}
+
+/* Glitchy Chaos Background Effect */
+@keyframes glitch {
+  0% {
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+    filter: brightness(100%) contrast(100%);
+  }
+  5% {
+    transform: translateX(-15px) skewX(10deg);
+    clip-path: inset(5px 0 10px 0);
+    filter: brightness(120%) contrast(150%);
+  }
+  10% {
+    transform: translateX(20px) skewY(10deg);
+    clip-path: inset(10px 0 5px 0);
+    filter: brightness(90%) contrast(200%);
+  }
+  15% {
+    transform: translateX(-25px) skewX(-10deg);
+    clip-path: inset(0 0 15px 0);
+    filter: brightness(110%) contrast(180%);
+  }
+  20% {
+    transform: translateX(30px) skewY(5deg);
+    clip-path: inset(15px 0 5px 0);
+    filter: brightness(80%) contrast(220%);
+  }
+  30% {
+    transform: translateX(-35px);
+    clip-path: inset(0 0 10px 0);
+    filter: brightness(130%) contrast(170%);
+  }
+  40% {
+    transform: translateX(40px);
+    clip-path: inset(5px 0 5px 0);
+    filter: brightness(100%) contrast(250%);
+  }
+  50% {
+    transform: translateX(-30px) skewX(15deg);
+    clip-path: inset(10px 0 0 0);
+    filter: brightness(140%) contrast(190%);
+  }
+  60% {
+    transform: translateX(25px) skewY(20deg);
+    clip-path: inset(5px 0 15px 0);
+    filter: brightness(90%) contrast(240%);
+  }
+  70% {
+    transform: translateX(-50px) skewX(-20deg);
+    clip-path: inset(0 0 5px 0);
+    filter: brightness(115%) contrast(220%);
+  }
+  80% {
+    transform: translateX(50px) skewY(10deg);
+    clip-path: inset(10px 0 10px 0);
+    filter: brightness(110%) contrast(200%);
+  }
+  90% {
+    transform: translateX(-40px) skewX(15deg);
+    clip-path: inset(5px 0 0 0);
+    filter: brightness(125%) contrast(180%);
+  }
+  100% {
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+    filter: brightness(100%) contrast(100%);
+  }
+}
+
+/* Applying the Glitch Animation to Chaos Background */
+.chaos-background {
+  background-image: url('assets/images/gameboy_pokemon.gif');
+  background-repeat: repeat;
+  background-size: 150px;
+  padding: 5vw;
+  margin: 5vw 0;
+  color: #ffffff;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  border: 5px dotted pink;
+  animation: glitch 1s infinite linear; /* Faster and more chaotic */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Floating Absolute Positioned Images */
+.floating-pokemon {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 15vw;
+  max-width: 150px;
+  z-index: 10;
+}
+
+.floating-penguin {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  width: 18vw;
+  max-width: 180px;
+  z-index: 10;
+}
+
+/* ASCII Art */
+pre {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 5vw 0;
+}
+/* Emoji Link (non-intuitive links) */
+.emoji-link {
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 5vw;
+  position: absolute;
+  z-index: 15; /* Ensure it's above other content */
+  animation: bounce 3s ease-in-out infinite;
+}
+
+/* Bounce Animation for the Video Game Emoji */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Bouncing Penguin Emoji */
+.emoji-link.penguin {
+  font-size: 5vw;
+  position: absolute;
+  z-index: 15; /* Ensure it's above other content */
+  animation: bounce-penguin 4s ease-in-out infinite;
+  animation-delay: 1s; /* Delay so the penguin starts bouncing after a short time */
+}
+
+/* Bounce Animation for the Penguin Emoji */
+@keyframes bounce-penguin {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Floating Pokémon and Penguin (Positioned absolutely) */
+.floating-pokemon {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 15vw;
+  max-width: 150px;
+  z-index: 10;
+  animation: move-pokemon 5s ease-in-out infinite;
+}
+
+/* Animation for the Floating Pokémon */
+@keyframes move-pokemon {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Floating Penguin with Bouncing Effect */
+.floating-penguin {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  width: 18vw;
+  max-width: 180px;
+  z-index: 10;
+  animation: move-penguin 5s ease-in-out infinite;
+}
+
+/* Animation for the Floating Penguin */
+@keyframes move-penguin {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20px, -20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.chaotic-link {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 20;
+}
+
+.bouncing-link {
+  font-size: 4vw;
+  color: #ff0066;
+  font-weight: bold;
+  animation: bounce 1s infinite alternate;
+  text-decoration: none;
+}
+
+.chaotic-icon {
+  width: 8vw;
+  max-width: 80px;
+  animation: rotate 2s infinite linear, moveAround 3s infinite alternate;
+  margin-top: 2vw;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveAround {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(30px) translateY(-30px);
+  }
+  100% {
+    transform: translateX(-30px) translateY(30px);
+  }
+}
+
